@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Artificial Intelligence | Presentation</title>
+<meta name="description" content="A one-page English presentation about artificial intelligence, its applications and challenges">
+
+<!-- Cairo font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+<script>
+/* Apply the saved theme before first paint to avoid a flash */
+try {
+  var t = localStorage.getItem('theme');
+  if (t !== 'light' && t !== 'dark') t = 'dark';
+  document.documentElement.setAttribute('data-theme', t);
+} catch (e) {}
+</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+<header class="topbar">
+  <span class="brand">🤖 Artificial Intelligence</span>
+  <div class="topbar-actions">
+    <span class="counter" id="counter" aria-live="polite">1 / 11</span>
+    <button class="icon-btn" id="themeBtn" type="button" aria-label="Toggle dark / light mode" title="Dark / light mode">🌙</button>
+    <a class="lang-link" href="index.html" hreflang="ar" lang="ar" aria-label="Switch to Arabic">العربية</a>
+    <button class="pdf-btn" type="button" onclick="window.print()" title="Open the print dialog to save as PDF">🖨️ <span class="pdf-label">Download PDF</span></button>
+  </div>
+</header>
+
+<main id="deck">
+
+  <!-- ================= Welcome ================= -->
+  <section class="slide slide--welcome" id="welcome" data-title="Welcome">
+    <div class="orbs" aria-hidden="true"><i></i><i></i><i></i></div>
+    <div class="inner inner--center">
+      <p class="eyebrow">Presentation</p>
+      <h1 class="greet">Welcome everyone 👋</h1>
+      <p class="name-line">With you, <span class="name">Samia Sinan</span></p>
+      <p class="lead">A quick journey to discover how smart systems are reshaping business, research, and innovation today.</p>
+      <div class="row">
+        <a class="btn btn--primary" href="#s1">Start the presentation <span aria-hidden="true">→</span></a>
+        <a class="btn btn--ghost" href="#conclusion">Conclusion</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Slide 1 ================= -->
+  <section class="slide" id="s1" data-title="Artificial Intelligence">
+    <div class="inner grid">
+      <div class="text">
+        <p class="eyebrow">Slide 1 / 9</p>
+        <h2>Artificial Intelligence</h2>
+        <p class="lead">How smart systems are reshaping business, research, and innovation today.</p>
+      </div>
+      <figure class="visual">
+        <svg class="viz" viewBox="0 0 360 240" role="img" aria-label="Illustration of a neural network">
+          <path class="lines" d="M50 60H180 M50 60L180 120 M50 60L180 180 M50 120L180 60 M50 120H180 M50 120L180 180 M50 180L180 60 M50 180L180 120 M50 180H180 M180 60L310 90 M180 60L310 150 M180 120L310 90 M180 120L310 150 M180 180L310 90 M180 180L310 150"/>
+          <circle class="node" cx="50" cy="60" r="11"/>
+          <circle class="node" cx="50" cy="120" r="11"/>
+          <circle class="node" cx="50" cy="180" r="11"/>
+          <circle class="node node--alt" cx="180" cy="60" r="11"/>
+          <circle class="node node--alt" cx="180" cy="120" r="11"/>
+          <circle class="node node--alt" cx="180" cy="180" r="11"/>
+          <circle class="node" cx="310" cy="90" r="11"/>
+          <circle class="node" cx="310" cy="150" r="11"/>
+        </svg>
+        <figcaption>A visual representation of AI concepts and neural networks</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ================= Slide 2 ================= -->
+  <section class="slide" id="s2" data-title="What is AI?">
+    <div class="inner grid">
+      <div class="text">
+        <p class="eyebrow">Slide 2 / 9</p>
+        <h2>What is Artificial Intelligence?</h2>
+        <p class="lead">The ability of software systems to perceive, analyze, learn from data, and make accurate decisions or generate useful content.</p>
+        <div class="chips">
+          <span class="chip">Perception</span>
+          <span class="chip">Analysis</span>
+          <span class="chip">Learning from data</span>
+          <span class="chip">Accurate decisions</span>
+          <span class="chip">Content generation</span>
+        </div>
+      </div>
+      <figure class="visual">
+        <svg class="viz" viewBox="0 0 360 240" role="img" aria-label="Smart chip labeled AI">
+          <g class="lines">
+            <path d="M90 95H120 M90 120H120 M90 145H120 M240 95H270 M240 120H270 M240 145H270 M150 40V70 M180 40V70 M210 40V70 M150 170V200 M180 170V200 M210 170V200"/>
+          </g>
+          <rect class="box" x="120" y="70" width="120" height="100" rx="18"/>
+          <text class="label label--big" x="180" y="128">AI</text>
+          <circle class="node" cx="90" cy="95" r="5"/>
+          <circle class="node" cx="90" cy="120" r="5"/>
+          <circle class="node" cx="90" cy="145" r="5"/>
+          <circle class="node node--alt" cx="270" cy="95" r="5"/>
+          <circle class="node node--alt" cx="270" cy="120" r="5"/>
+          <circle class="node node--alt" cx="270" cy="145" r="5"/>
+        </svg>
+        <figcaption>Software systems represented as intelligent units that learn from data</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ================= Slide 3 ================= -->
+  <section class="slide" id="s3" data-title="Machine & Deep Learning">
+    <div class="inner grid">
+      <div class="text">
+        <p class="eyebrow">Slide 3 / 9</p>
+        <h2>Machine Learning &amp; Deep Learning</h2>
+        <p class="lead">Models that automatically recognize patterns across big data and multi-layer neural networks — without programming every single rule.</p>
+        <div class="chips">
+          <span class="chip">Big data</span>
+          <span class="chip">Automatic patterns</span>
+          <span class="chip">Multiple layers</span>
+        </div>
+      </div>
+      <figure class="visual">
+        <svg class="viz" viewBox="0 0 360 300" role="img" aria-label="Diagram of neural network layers">
+          <path class="lines" d="M180 66V96 M180 136V166 M180 206V236"/>
+          <rect class="box" x="60" y="20" width="240" height="46" rx="12"/>
+          <rect class="box box--alt" x="60" y="96" width="240" height="40" rx="12"/>
+          <rect class="box box--alt" x="60" y="166" width="240" height="40" rx="12"/>
+          <rect class="box" x="60" y="236" width="240" height="46" rx="12"/>
+          <text class="label" x="180" y="49">Input layer</text>
+          <text class="label" x="180" y="122">Hidden layer 1</text>
+          <text class="label" x="180" y="192">Hidden layer 2</text>
+          <text class="label" x="180" y="265">Output layer</text>
+        </svg>
+        <figcaption>Diagram showing the layers of neural networks in machine learning</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ================= Slide 4 ================= -->
+  <section class="slide" id="s4" data-title="Language & Generative AI">
+    <div class="inner grid">
+      <div class="text">
+        <p class="eyebrow">Slide 4 / 9</p>
+        <h2>Language &amp; Generative AI</h2>
+        <p class="lead">Understanding Arabic and English texts, and generating explanations, code, translation, and quick summaries of complex information.</p>
+        <div class="row">
+          <a class="btn btn--primary" href="https://openai.com/" target="_blank" rel="noopener noreferrer">Visit site — openai.com <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <figure class="visual">
+        <svg class="viz" viewBox="0 0 360 240" role="img" aria-label="Chat bubbles between a user and a language model">
+          <rect class="bubble" x="20" y="35" width="190" height="70" rx="20"/>
+          <rect class="lines-soft" x="42" y="58" width="140" height="8" rx="4"/>
+          <rect class="lines-soft" x="42" y="78" width="100" height="8" rx="4"/>
+          <rect class="bubble bubble--alt" x="150" y="135" width="190" height="70" rx="20"/>
+          <rect class="lines-soft lines-soft--alt" x="172" y="158" width="140" height="8" rx="4"/>
+          <rect class="lines-soft lines-soft--alt" x="172" y="178" width="86" height="8" rx="4"/>
+        </svg>
+        <figcaption>A bilingual dialogue in Arabic and English: explain, translate, summarize</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ================= Slide 5 ================= -->
+  <section class="slide" id="s5" data-title="Computer Vision">
+    <div class="inner grid">
+      <div class="text">
+        <p class="eyebrow">Slide 5 / 9</p>
+        <h2>Computer Vision</h2>
+        <p class="lead">Analyzing images and video to detect patterns, supporting medical screening, smart monitoring, and industrial quality automation.</p>
+        <div class="chips">
+          <span class="chip">Medical screening</span>
+          <span class="chip">Smart monitoring</span>
+          <span class="chip">Industrial quality</span>
+        </div>
+      </div>
+      <figure class="visual">
+        <svg class="viz" viewBox="0 0 360 240" role="img" aria-label="Practical example of image analysis">
+          <defs>
+            <linearGradient id="gVision" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#1e3a8a"/>
+              <stop offset="100%" stop-color="#0ea5e9"/>
+            </linearGradient>
+          </defs>
+          <rect x="20" y="20" width="320" height="200" rx="16" fill="url(#gVision)"/>
+          <circle cx="90" cy="70" r="18" fill="#fde68a" opacity=".9"/>
+          <path d="M20 175 L110 120 L175 165 L240 118 L340 175 V204 H20 Z" fill="#0b1020" opacity=".55"/>
+          <rect class="detect" x="55" y="42" width="70" height="60" rx="8"/>
+          <text class="detect-label" x="90" y="36">Sun 99%</text>
+          <rect class="detect detect--alt" x="205" y="105" width="80" height="70" rx="8"/>
+          <text class="detect-label" x="245" y="99">Object 96%</text>
+        </svg>
+        <figcaption>A practical example of computer vision and image analysis</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ================= Slide 6 ================= -->
+  <section class="slide" id="s6" data-title="Applications & Tools">
+    <div class="inner grid">
+      <div class="text">
+        <p class="eyebrow">Slide 6 / 9</p>
+        <h2>Practical Applications &amp; Tools</h2>
+        <p class="lead">AI solutions integrate into education, healthcare, finance, and software development to boost productivity and reduce effort.</p>
+        <div class="row">
+          <a class="btn btn--primary" href="https://huggingface.co/" target="_blank" rel="noopener noreferrer">Visit site — huggingface.co <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <figure class="visual">
+        <div class="tiles">
+          <div class="tile"><span class="tile-ico">🎓</span><span>Education</span></div>
+          <div class="tile"><span class="tile-ico">🏥</span><span>Healthcare</span></div>
+          <div class="tile"><span class="tile-ico">💰</span><span>Finance</span></div>
+          <div class="tile"><span class="tile-ico">💻</span><span>Software development</span></div>
+        </div>
+        <figcaption>Sectors where AI integrates every day</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ================= Slide 7 ================= -->
+  <section class="slide" id="s7" data-title="Challenges & Ethics">
+    <div class="inner grid">
+      <div class="text">
+        <p class="eyebrow">Slide 7 / 9</p>
+        <h2>Challenges &amp; Ethics</h2>
+        <p class="lead">Smart systems require privacy protection, bias reduction, transparency, and human verification to ensure reliable results.</p>
+        <div class="chips">
+          <span class="chip">Privacy protection</span>
+          <span class="chip">Bias reduction</span>
+          <span class="chip">Transparency</span>
+          <span class="chip">Human verification</span>
+        </div>
+      </div>
+      <figure class="visual">
+        <svg class="viz" viewBox="0 0 360 240" role="img" aria-label="Shield symbolizing ethics and data protection">
+          <path class="box" d="M180 25 L285 65 V135 C285 190 240 218 180 232 C120 218 75 190 75 135 V65 Z"/>
+          <path class="check" d="M132 128 L168 164 L232 96"/>
+          <circle class="node node--alt" cx="180" cy="25" r="6"/>
+        </svg>
+        <figcaption>Trust and transparency are the foundation of responsible use</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ================= Slide 8 ================= -->
+  <section class="slide" id="s8" data-title="The Future & Conclusion">
+    <div class="inner grid">
+      <div class="text">
+        <p class="eyebrow">Slide 8 / 9</p>
+        <h2>The Future &amp; Conclusion</h2>
+        <p class="lead">AI is a powerful enabler; its true value lies in using it responsibly to serve humanity and build sustainable solutions.</p>
+      </div>
+      <figure class="visual">
+        <svg class="viz" viewBox="0 0 360 240" role="img" aria-label="Future vision of a smart city">
+          <defs>
+            <linearGradient id="gCity" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#312e81"/>
+              <stop offset="100%" stop-color="#0b1020"/>
+            </linearGradient>
+          </defs>
+          <rect x="20" y="20" width="320" height="200" rx="16" fill="url(#gCity)"/>
+          <circle cx="278" cy="66" r="22" fill="#fbbf24" opacity=".85"/>
+          <g fill="#38bdf8" opacity=".85">
+            <rect x="55" y="120" width="40" height="80" rx="6"/>
+            <rect x="105" y="90" width="46" height="110" rx="6"/>
+            <rect x="161" y="140" width="38" height="60" rx="6"/>
+            <rect x="209" y="105" width="44" height="95" rx="6"/>
+            <rect x="263" y="150" width="36" height="50" rx="6"/>
+          </g>
+          <g fill="#0b1020" opacity=".65">
+            <rect x="63" y="132" width="10" height="10"/><rect x="79" y="132" width="10" height="10"/>
+            <rect x="115" y="104" width="10" height="10"/><rect x="131" y="104" width="10" height="10"/>
+            <rect x="115" y="124" width="10" height="10"/><rect x="131" y="124" width="10" height="10"/>
+            <rect x="219" y="120" width="10" height="10"/><rect x="235" y="120" width="10" height="10"/>
+            <rect x="219" y="142" width="10" height="10"/><rect x="235" y="142" width="10" height="10"/>
+          </g>
+          <path class="lines" d="M40 70 C110 40, 200 40, 320 60" stroke-dasharray="6 8"/>
+          <circle class="node node--alt" cx="180" cy="46" r="6"/>
+        </svg>
+        <figcaption>A future vision of AI integrated into daily life</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ================= Slide 9 ================= -->
+  <section class="slide" id="s9" data-title="Key Takeaways">
+    <div class="inner">
+      <div class="text text--wide">
+        <p class="eyebrow">Slide 9 / 9</p>
+        <h2>Key Takeaways</h2>
+        <ul class="list">
+          <li>AI systems perceive, analyze, and learn from data.</li>
+          <li>Deep learning builds patterns through multi-layer neural networks.</li>
+          <li>Generative models understand Arabic and English and produce content.</li>
+          <li>Computer vision analyzes images and video in medicine and industry.</li>
+          <li>Integration into education, healthcare, finance, and code boosts productivity.</li>
+          <li>Transparency and human verification are essential for reliable results.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Conclusion ================= -->
+  <section class="slide slide--end" id="conclusion" data-title="Conclusion">
+    <div class="orbs" aria-hidden="true"><i></i><i></i><i></i></div>
+    <div class="inner inner--center">
+      <p class="eyebrow">Conclusion</p>
+      <h2 class="greet">Thank you for listening 🙏</h2>
+      <p class="lead">Remember: AI is a powerful enabler, and its true value lies in using it responsibly to serve humanity and build sustainable solutions.</p>
+      <p class="name-line">Prepared by <span class="name">Samia Sinan</span></p>
+      <div class="row">
+        <a class="btn btn--primary" href="#welcome">Restart the presentation <span aria-hidden="true">↺</span></a>
+        <a class="btn btn--ghost" href="#s1">Back to first slide</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<nav class="deck-nav" aria-label="Slide navigation">
+  <button class="nav-btn" id="prevBtn" type="button">← <span>Previous</span></button>
+  <div class="dots" id="dots"></div>
+  <button class="nav-btn" id="nextBtn" type="button"><span>Next</span> →</button>
+</nav>
+
+<script>
+(function () {
+  var slides = Array.prototype.slice.call(document.querySelectorAll('.slide'));
+  var dotsBox = document.getElementById('dots');
+  var counter = document.getElementById('counter');
+  var prevBtn = document.getElementById('prevBtn');
+  var nextBtn = document.getElementById('nextBtn');
+  var bar = document.getElementById('progressBar');
+  var current = 0;
+  var isRTL = document.documentElement.dir === 'rtl';
+
+  slides.forEach(function (s, i) {
+    var d = document.createElement('button');
+    d.type = 'button';
+    d.className = 'dot';
+    d.setAttribute('aria-label', 'Go to: ' + (s.dataset.title || ''));
+    d.addEventListener('click', function () { goTo(i); });
+    dotsBox.appendChild(d);
+  });
+
+  function goTo(i) {
+    i = Math.max(0, Math.min(slides.length - 1, i));
+    slides[i].scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  function setActive(i) {
+    current = i;
+    counter.textContent = (i + 1) + ' / ' + slides.length;
+    bar.style.width = (((i + 1) / slides.length) * 100) + '%';
+    Array.prototype.forEach.call(dotsBox.children, function (d, k) {
+      d.classList.toggle('is-active', k === i);
+      d.setAttribute('aria-current', k === i ? 'true' : 'false');
+    });
+    prevBtn.disabled = i === 0;
+    nextBtn.disabled = i === slides.length - 1;
+  }
+
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) setActive(slides.indexOf(e.target));
+      });
+    }, { threshold: 0.55 });
+    slides.forEach(function (s) { io.observe(s); });
+  }
+
+  prevBtn.addEventListener('click', function () { goTo(current - 1); });
+  nextBtn.addEventListener('click', function () { goTo(current + 1); });
+
+  var fwdKey = isRTL ? 'ArrowLeft' : 'ArrowRight';
+  var backKey = isRTL ? 'ArrowRight' : 'ArrowLeft';
+
+  document.addEventListener('keydown', function (e) {
+    if (e.target.closest('a,button,input,textarea')) return;
+    if (e.key === fwdKey || e.key === 'ArrowDown' || e.key === 'PageDown' || e.key === ' ') {
+      e.preventDefault(); goTo(current + 1);
+    } else if (e.key === backKey || e.key === 'ArrowUp' || e.key === 'PageUp') {
+      e.preventDefault(); goTo(current - 1);
+    } else if (e.key === 'Home') { e.preventDefault(); goTo(0); }
+    else if (e.key === 'End') { e.preventDefault(); goTo(slides.length - 1); }
+  });
+
+  var sx = 0, sy = 0;
+  document.addEventListener('touchstart', function (e) {
+    sx = e.touches[0].clientX; sy = e.touches[0].clientY;
+  }, { passive: true });
+  document.addEventListener('touchend', function (e) {
+    var dx = e.changedTouches[0].clientX - sx;
+    var dy = e.changedTouches[0].clientY - sy;
+    if (Math.abs(dx) > 70 && Math.abs(dx) > Math.abs(dy) * 1.5) {
+      var forward = isRTL ? dx > 0 : dx < 0;
+      goTo(current + (forward ? 1 : -1));
+    }
+  }, { passive: true });
+
+  var themeBtn = document.getElementById('themeBtn');
+  function syncTheme() {
+    var light = document.documentElement.getAttribute('data-theme') === 'light';
+    themeBtn.textContent = light ? '☀️' : '🌙';
+    themeBtn.setAttribute('aria-pressed', String(light));
+  }
+  themeBtn.addEventListener('click', function () {
+    var next = document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', next);
+    try { localStorage.setItem('theme', next); } catch (e) {}
+    syncTheme();
+  });
+  syncTheme();
+
+  setActive(0);
+})();
+</script>
+
+</body>
+</html>
